@@ -17,7 +17,6 @@ class Ui_Dialog(object):
                             "}"
                              "QComboBox:!editable, QComboBox::drop-down:editable {background: white; border: none;}"
                             "QComboBox QAbstractItemView { border: none; selection-background-color: #2f4e7e; }"
-                             # "QComboBox::down-arrow {image: url(downwards-arrow-key.png);border: none;    width: 15px;}"
                             "QComboBox::drop-down {subcontrol-origin: padding;subcontrol-position: top right;width: 15px;}"
                              "QOpenGLWidget{color: white}"
                              )
@@ -59,11 +58,11 @@ class Ui_Dialog(object):
         self.label_file.setObjectName("label_file")
 
 
-        self.label_sermoner = QtWidgets.QLabel(Dialog)
-        self.label_sermoner.setGeometry(QtCore.QRect(30, 130, 111, 20))
-        self.label_sermoner.setFont(font)
-        self.label_sermoner.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_sermoner.setObjectName("label_sermoner")
+        self.label_speaker = QtWidgets.QLabel(Dialog)
+        self.label_speaker.setGeometry(QtCore.QRect(30, 130, 111, 20))
+        self.label_speaker.setFont(font)
+        self.label_speaker.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
+        self.label_speaker.setObjectName("label_speaker")
 
         self.label_date = QtWidgets.QLabel(Dialog)
         self.label_date.setGeometry(QtCore.QRect(30, 170, 111, 20))
@@ -80,7 +79,7 @@ class Ui_Dialog(object):
         self.msgBox.setWindowTitle(QtWidgets.QApplication.translate("Dialog", "ERR", None, -1))
         self.pushButton.setText(QtWidgets.QApplication.translate("Dialog", "Отправить", None, -1))
         self.label_file.setText(QtWidgets.QApplication.translate("Dialog", "Файл:", None, -1))
-        self.label_sermoner.setText(QtWidgets.QApplication.translate("Dialog", "Спикер:", None, -1))
+        self.label_speaker.setText(QtWidgets.QApplication.translate("Dialog", "Спикер:", None, -1))
         self.label_date.setText(QtWidgets.QApplication.translate("Dialog", "Дата:", None, -1))
         self.fileButton.setText(QtWidgets.QApplication.translate("Dialog", "...", None, -1))
 

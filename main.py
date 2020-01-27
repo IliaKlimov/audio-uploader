@@ -55,7 +55,7 @@ def get_newest_list(URL):
     return dict
 
 
-def setListSermoners(pids_dict):
+def setListSpeakers(pids_dict):
     try:
         pids_dict = get_newest_list(URL)
     except Exception:
@@ -164,10 +164,10 @@ if __name__ == "__main__":
             print("Settings not found")
 
     pids_dict = {}
-    setListSermoners(pids_dict)
+    setListSpeakers(pids_dict)
     print("List ok")
 
-    # Выбор Кириченко И.И. "по умолчанию"
+    # Выбор 23 id "по умолчанию"
     ui.comboBox.setCurrentIndex(ui.comboBox.findData(23))
 
 
