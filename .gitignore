@@ -1,0 +1,7 @@
+/.idea
+/__pycache__
+/build
+/dist
+/test_files
+/Release
+settings.py
